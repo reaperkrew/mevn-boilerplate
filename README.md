@@ -7,6 +7,8 @@
 
 ## Included Client Features
 * Webpack
+* VueJS / Vuex / Vue Router
+* Ready to go single page application architecture
 * Bootstrap Vue
 * Fontawesome Free
 * CoreJS / Regenerator Runtime
