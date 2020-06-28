@@ -1,0 +1,39 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --config webpack.dev.js",
+    "prod": "webpack --config webpack.prod.js",
+    "watch": "npm run dev -- --watch"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
+    "bootstrap-vue": "^2.15.0",
+    "cookie-parser": "~1.4.4",
+    "core-js": "^3.6.5",
+    "popper.js": "^1.16.1",
+    "regenerator-runtime": "^0.13.5",
+    "vue": "^2.6.11",
+    "vue-router": "^3.3.4",
+    "vuex": "^3.4.0"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.1",
+    "css-loader": "^3.6.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-merge": "^4.2.2"
+  },
+  "author": "",
+  "license": "ISC"
+}
