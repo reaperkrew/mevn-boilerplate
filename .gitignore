@@ -28,6 +28,7 @@ benchmarks/graphs
 public/javascripts/*.js
 public/stylesheets/*.css
 .env
+logs/*.log
 
 # Client
 client/package-lock.json
