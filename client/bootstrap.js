@@ -1,9 +1,9 @@
-import "core-js";
-import "regenerator-runtime";
+import 'core-js';
+import 'regenerator-runtime';
 import './sass/app.scss';
 import 'popper.js';
 import 'bootstrap-vue';
-import '@fortawesome/fontawesome-free/js/fontawesome.min.js';
-import '@fortawesome/fontawesome-free/js/brands.min.js';
-import '@fortawesome/fontawesome-free/js/solid.min.js';
-import '@fortawesome/fontawesome-free/js/regular.min.js';
+import '@fortawesome/fontawesome-free/js/fontawesome.min';
+import '@fortawesome/fontawesome-free/js/brands.min';
+import '@fortawesome/fontawesome-free/js/solid.min';
+import '@fortawesome/fontawesome-free/js/regular.min';

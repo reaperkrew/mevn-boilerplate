@@ -1,3 +1,4 @@
+/* eslint-disable import/no-extraneous-dependencies */
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const VueLoader = require('vue-loader');
@@ -14,38 +15,38 @@ module.exports = {
     rules: [{
       test: /\.scss$/,
       use: [
-          MiniCssExtractPlugin.loader,
-          {
-            loader: 'css-loader',
+        MiniCssExtractPlugin.loader,
+        {
+          loader: 'css-loader',
+        },
+        {
+          loader: 'sass-loader',
+          options: {
+            sourceMap: true,
+            // options...
           },
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true,
-              // options...
-            }
-          }
-        ]
+        },
+      ],
     }, {
       test: /\.vue$/,
-      loader: 'vue-loader'
+      loader: 'vue-loader',
     }, {
       test: /\.css$/,
       use: [
         'vue-style-loader',
         'css-loader',
-      ]
-    },{
+      ],
+    }, {
       test: /\.(woff|woff2|eot|ttf|otf)$/,
       use: [
         'file-loader',
       ],
-    },]
+    }],
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '../stylesheets/app.css'
+      filename: '../stylesheets/app.css',
     }),
     new VueLoader.VueLoaderPlugin(),
-  ]
+  ],
 };
