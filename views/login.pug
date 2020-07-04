@@ -1,0 +1,13 @@
+extends login_layout
+
+block content
+  div(id="login")
+    .d-flex(style="height: 100vh; align-items: center; justify-content: center")
+      .login-house
+        form(action="/login" method="post")
+          .form-group
+            input.form-control(type="text" name="email" placeholder="email" required)
+            input.form-control.mt-3(type="password" name="password" placeholder="password" required)
+            if error
+              small.form-text.text-danger Email or password incorrect
+          button.btn.btn-primary(type="submit") Login
